@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            *{
+                background-color:skyblue;
+            }
+            h1{
+                color: red;
+            }
+            h2,h3{
+                color: blue;
+            }
+            h3:target{
+                background-color: lightsalmon;
+            }
+            .def::first-line{
+                background-color: blueviolet;
+                font-family: cursive;
+            }
+            p::first-letter{
+                background-color: skyblue;
+                font-size:large;
+                font-weight: bolder;
+            }
+            h3::before{
+                content: "[";
+            }
+            h3::after{
+                content: "]";
+            }
+        </style>
+    </head>
+    <body>
+        <h1><center>Programming Languages</center></h1>
+        <h2>Definition</h2>
+        <p class="def">A programming language is a way for programmers (developers) to communicate with 
+            computers. Programming languages consist of a set of rules that allows string 
+            values to be converted into various ways of generating machine code, or, in the 
+            case of visual programming languages, graphical elements.</p>
+        <p><b>Basic programming languages are</b></p>
+        <ul>
+            <li><a href="#py">Python</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#c++">C++</a></li>
+            <li><a href="#js">Javascript</a></li>
+        </ul>
+        <h3 id="py">Python</h2>
+        <p>This is a high-level and general-purpose language that focuses on code 
+            readability. It's one of the most popular beginner languages because of its 
+            ease of use, wide application, active community, and freedom of use.</p>
+        <h3 id="java">Java</h2>
+        <p>Developers mostly use Java for web apps' back-end interfaces or general 
+            service application programming interfaces (APIs) enhanced by frameworks such 
+            as Spring and Dropwizard. Java differs from JavaScript in that it's a 
+            strongly typed language, translating to a deeper learning curve.</p>
+        <h3 id="c++">C++</h2>
+        <p>C++ came from C and is used to simplify programming, though it's still a 
+            low-level language. You can easily translate C programs to C++. In comparison,
+             coders may use it for embedded systems, while C++ is better structured for 
+             application development.</p>
+        <h3 id="js">Javascript</h2>
+        <p>This is the world's most popular programming language. Coders mainly use it on 
+            the world wide web to create web interfaces or websites. It can be an 
+            easy-to-learn language. Programmers may classify JavaScript as a high-level 
+            language, multi-paradigm, and just in time compiled. It features dynamic 
+            typing, first-class functions, and prototype-based object orientation.</p>
+    </body>
+</html>

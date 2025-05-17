@@ -1,0 +1,58 @@
+body{
+    background-color: yellow;
+}
+form{
+    border: 4px solid black;
+}
+input:required{
+    border:2px groove rgb(225, 25, 225);
+}
+input:optional{
+    border:2px dashed blue;
+}
+input:disabled{
+    border:2px dotted violet;
+    background-color: gray;
+}
+p{
+    display:none;
+}
+input:hover+p{
+    display: inline;
+    background-color: red;
+    font-family:monospace;
+}
+input:read-only{
+    background-color: gray;
+}
+input:focus{
+    background-color: gray;
+    font-size: 15px;
+    font-weight: bolder;
+}
+body{
+    font-family: cursive;
+    font-weight: bolder;
+}
+input[type="radio"]:checked{
+    height: 20px;
+    width: 20px;
+}
+input:checked+label{
+    color: red;
+}
+img{
+    display: none;
+}
+input[type="email"]:focus:valid~img.valid{
+    display: inline;
+}
+input[type="email"]:focus:invalid~img.invalid{
+    display: inline;
+}
+input[type="number"]:focus:in-range~img.valid{
+    display: inline;
+}
+input[type="submit"]{
+    border:2px solid violet;
+}
